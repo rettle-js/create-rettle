@@ -1,22 +1,28 @@
 {
   "name": "create-rettle",
-  "version": "0.0.1-beta0.11",
+  "version": "0.0.1",
   "description": "Setup the Rettle application.",
-  "main": "lib/index.js",
   "bin": "cli.js",
-  "files": ["lib/index.js", "cli.js"],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "files": ["cli.js"],
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RettleJS/create-rettle.git"
   },
-  "keywords": ["rettle"],
+  "keywords": [
+    "rettle"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RettleJS/create-rettle/issues"
   },
-  "homepage": "https://github.com/RettleJS/create-rettle#readme"
+  "homepage": "https://github.com/RettleJS/create-rettle#readme",
+  "devDependencies": {
+    "@types/react-helmet": "^6.1.6"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "glob": "^9.1.0"
+  }
 }

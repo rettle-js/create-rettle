@@ -1,6 +1,6 @@
 {
   "name": "create-rettle",
-  "version": "0.0.1-beta0.1",
+  "version": "0.0.1-beta0.11",
   "description": "Setup the Rettle application.",
   "main": "lib/index.js",
   "bin": "cli.js",

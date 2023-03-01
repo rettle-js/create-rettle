@@ -6,12 +6,12 @@ Create a new Rettke app:
 
 ### npm
 ```bash
-npm create rettle
+npm create rettle@latest
 ```
 
 ### yarn 
 ```bash
-yarn create rettle
+yarn create rettle@latest
 ```
 
 ## Options
@@ -19,13 +19,13 @@ Specifying the directory name at the end of the command creates the directory an
 The default value is `. /`.
 
 ```bash
-npm create rettle <directory-name>
+npm create rettle@latest <directory-name>
 ```
 
 ## Quick Start
 ```bash
 // Create Rettle App
-npm create rettle foo
+npm create rettle@latest foo
 
 // Move app directory
 cd ./foo

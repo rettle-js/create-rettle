@@ -1,6 +1,6 @@
 {
   "name": "create-rettle",
-  "version": "0.0.13",
+  "version": "0.0.2",
   "description": "Setup the Rettle application.",
   "bin": "cli.js",
   "files": ["cli.js", "template-rettle-app"],

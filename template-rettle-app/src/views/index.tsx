@@ -1,8 +1,9 @@
 import * as React from "react";
-import {createCache, createRettle, Component, RettleFrame} from "rettle";
+import {createCache, createRettle, Component} from "rettle";
 import {css, Global} from "@emotion/react";
 import Button from "@/Component/Button";
 import Helmet from "react-helmet";
+import {createClient} from "rettle/core";
 
 const cache = createCache("rettle");
 
@@ -71,7 +72,7 @@ const App = () => {
   )
 }
 
-export const script:RettleFrame = ({getRef, watcher, onMounted}) => {
+export const client = createClient(({getRef, watcher, onMounted}) => {
   const counterNode = getRef("counter");
   const [count, setCount] = watcher(0, () => {
     counterNode.innerText = `${count.value}`;
@@ -83,5 +84,5 @@ export const script:RettleFrame = ({getRef, watcher, onMounted}) => {
   return {
     handleCountUp
   }
-}
+})
 export default createRettle(cache, App());

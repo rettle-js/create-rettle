@@ -1,5 +1,6 @@
 import * as React from "react";
-import {Component, RettleFrame} from "rettle";
+import {Component} from "rettle";
+import {createClient} from "rettle/core";
 import {css} from "@emotion/react";
 
 interface ButtonProps {
@@ -31,8 +32,7 @@ const Button:React.FC<ButtonProps> = (props) => {
   )
 }
 
-
-export const script:RettleFrame = ({onMounted}, props) => {
+export const client = createClient<any>(({onMounted}, props) => {
   const onClick = () => {
     props.handleCountUp();
   }
@@ -40,5 +40,5 @@ export const script:RettleFrame = ({onMounted}, props) => {
   return {
     onClick
   }
-}
+});
 export default Button;
